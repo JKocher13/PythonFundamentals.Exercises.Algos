@@ -41,5 +41,3 @@ def determine_mid(list_in):
 		mid = length_index//2
 	return mid
 
-lst = list(range(1,101))
-binary_search(list(range(1,101)), 52)

@@ -50,5 +50,10 @@ class TestFunctions(unittest.TestCase):
     	sys.stdout = text_trap
     	self.assertEqual(binary_search.binary_test_high(self._list1, self._item6),list(range(1,51)))
 
+    def test_determine_mid(self):
+    	text_trap = io.StringIO()
+    	sys.stdout = text_trap
+    	self.assertEqual(binary_search.determine_mid(self._list1),50)
+
 if __name__ == '__main__':
     unittest.main()
